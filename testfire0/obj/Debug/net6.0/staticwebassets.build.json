@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "vZcKtE45JhTTaPvndYwTiEmtgs5BkL7H6Cmh+rnPGcE=",
+  "Source": "testfire0",
+  "BasePath": "_content/testfire0",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "testfire0\\wwwroot",
+      "Source": "testfire0",
+      "ContentRoot": "C:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\testfire0\\wwwroot\\",
+      "BasePath": "_content/testfire0",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\testfire0\\wwwroot\\css\\style.css",
+      "SourceId": "testfire0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\testfire0\\wwwroot\\",
+      "BasePath": "_content/testfire0",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\testfire0\\wwwroot\\img\\sal.webp",
+      "SourceId": "testfire0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\testfire0\\wwwroot\\",
+      "BasePath": "_content/testfire0",
+      "RelativePath": "img/sal.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sal.webp"
+    }
+  ]
+}
