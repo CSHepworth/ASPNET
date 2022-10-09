@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Dish
+
+<h1 class="indexHeader">@Model.Name</h1>
+<h3 class="linkHeader"><a href="/">Home</a> | <a href="/dishes/new">Add a Dish</a></h3>
+<p>@Model.Name by @Model.Chef</p>
+<p>@Model.Description</p>
+<p>Calories: @Model.Calories</p>
+<p>Tastiness: @Model.Tastiness</p>
+<div>
+    <a asp-controller="Home" asp-action="EditDish" asp-route-editDishId="@Model.DishId">Edit</a>
+    <form asp-controller="Home" asp-action="DeleteDish" asp-route-deleteDishId="@Model.DishId"><button class="btn-outline-danger">Delete</button></form>
+</div>

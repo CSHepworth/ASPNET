@@ -1,0 +1,25 @@
+﻿<link rel="stylesheet" href="~/css/style.css">
+@model Dish
+
+<div>
+    <h1 class="indexHeader">Welcome to CRUDelicious</h1>
+    <h3 class="linkHeader">Home | <a href="/dishes/new">Add a Dish</a></h3>
+    <div>
+        <h3>Recently Added</h3>
+        @foreach (var dish in ViewBag.AllDishes)
+        {
+            <p><a asp-controller="Home" asp-action="DisplayDish" asp-route-dishId="@dish.DishId">@dish.Name</a> by @dish.Chef on @dish.CreatedAt</p>
+        }
+    </div>
+    <div>
+        <h3>Guy Fierri's Dishes</h3>
+        @foreach (var dish in ViewBag.GuysDishes)
+        {
+            <p>@dish.Name</p>
+        }
+    </div>
+    <div>
+        <h3>Dish of the Week</h3>
+        <p>@ViewBag.WMK.Name</p>
+    </div>
+</div>

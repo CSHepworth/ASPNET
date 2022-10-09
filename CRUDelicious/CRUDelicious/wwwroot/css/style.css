@@ -1,0 +1,42 @@
+.indexHeader {
+    text-align: center;
+}
+.linkHeader {
+    text-align: center;
+}
+.addDishMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    align-self: center;
+}
+.addDishLeft {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 25px;
+    gap: 20px;
+}
+.addDishMid {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 25px;
+}
+.addDishRight {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+.addDishInput {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+.addDishSubmit {
+    align-self: flex-end;
+    width: 40%;
+}

@@ -6,39 +6,39 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = RandomPasscode
-build_property.RootNamespace = RandomPasscode
-build_property.ProjectDir = c:\Users\coope\GitHub\Csharp\ASPNET\RandomPasscode\RandomPasscode\
+build_property.RootNamespace = MonsterEntity
+build_property.RootNamespace = MonsterEntity
+build_property.ProjectDir = C:\Users\coope\GitHub\Csharp\ASPNET\MonsterEntity\MonsterEntity\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\coope\GitHub\Csharp\ASPNET\RandomPasscode\RandomPasscode
+build_property.MSBuildProjectDirectory = C:\Users\coope\GitHub\Csharp\ASPNET\MonsterEntity\MonsterEntity
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/Home/Index.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/Home/Privacy.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/Shared/Error.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/_ViewImports.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/_ViewStart.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/coope/GitHub/Csharp/ASPNET/RandomPasscode/RandomPasscode/Views/Shared/_Layout.cshtml]
+[C:/Users/coope/GitHub/Csharp/ASPNET/MonsterEntity/MonsterEntity/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-oxloe4pn0e
+build_metadata.AdditionalFiles.CssScope = b-9dy1ukh2tf

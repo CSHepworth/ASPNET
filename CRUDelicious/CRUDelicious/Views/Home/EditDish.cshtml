@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Dish
+
+<h1 class="indexHeader">Edit @Model.Name</h1>
+<h3 class="linkHeader"><a href="/">Home</a> | <a href="/dishes/new">Add a Dish</a></h3>
+<form method="post" asp-action="Edit" asp-controller="Home" class="addDishMain">
+    <div class="addDishLeft">
+        <div class="addDishInput">
+            <label asp-for="Chef">Chef's Name</label>
+            <input type="text" asp-for="Chef" value="@Model.Chef">
+        </div>
+        <div class="addDishInput">
+            <label asp-for="Name">Name of Dish</label>
+            <input type="text" asp-for="Name" value="@Model.Name">
+        </div>
+        <div class="addDishInput">
+            <label asp-for="Calories"># of Calories</label>
+            <input type="number" asp-for="Calories" value="@Model.Calories">
+        </div>
+    </div>
+    <div class="addDishMid">        
+        <div class="addDishInput">
+            <label asp-for="Tastiness">Tastiness</label>
+            <select asp-for="Tastiness">
+                <option value="" selected disabled hidden>--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </div>
+    </div>
+    <div class="addDishRight">
+        <div class="addDishInput">
+            <label asp-for="Description">Description</label>
+            <textarea asp-for="Description" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Update Dish" class="addDishSubmit">
+    </div>
+</form>
