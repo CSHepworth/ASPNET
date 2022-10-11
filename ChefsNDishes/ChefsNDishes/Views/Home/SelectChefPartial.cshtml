@@ -1,0 +1,4 @@
+@foreach (var chef in ViewBag.AllChefs)
+{
+    <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
+}

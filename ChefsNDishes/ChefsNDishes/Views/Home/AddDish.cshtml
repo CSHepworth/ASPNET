@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Dish
+
+<h3 class="linkHeader"><a href="/">Chefs</a> | <a href="/dishes">Dishes</a> | <a href="/addchef">Add a Chef</a> | Add a Dish</h3>
+<h2>Add a Dish</h2>
+<form method="post" asp-action="CreateDish" asp-controller="Home">
+    <div>
+        <label asp-for="DishName">Name of Dish:</label>
+        <input type="text" asp-for="DishName">
+    </div>
+    <div>
+        <label for="DishCalories"># of Calories:</label>
+        <input type="number" asp-for="DishCalories">
+    </div>
+    <div>
+        <label for="ChefId">Chef</label>
+        <select asp-for="ChefId">
+            <partial name="SelectChefPartial" />
+        </select>
+    </div>
+    <div>
+        <label asp-for="DishTastiness">Tastiness</label>
+        <select asp-for="DishTastiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+    </div>
+    <input type="submit" value="Add Dish">
+</form>

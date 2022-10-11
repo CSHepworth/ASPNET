@@ -61,10 +61,24 @@ public class HomeController : Controller
         return View("EditDish", dish);
     }
 
-    [HttpPost("/Update")]
-    public IActionResult Update()
+    [HttpPost("/dishes/{dishId}/update")]
+    public IActionResult Update(Dish editedDish, int dishId)
     {
-        return RedirectToAction("");
+        Dish? dish = dbcontext.Dishes.FirstOrDefault(d => d.DishId == dishId);
+        if (dish == null)
+        {
+            return RedirectToAction("Index");
+        }
+        dish.Name = editedDish.Name;
+        dish.Chef = editedDish.Chef;
+        dish.Calories = editedDish.Calories;
+        dish.Tastiness = editedDish.Tastiness;
+        dish.Description = editedDish.Description;
+        dish.UpdatedAt = DateTime.Now;
+
+        dbcontext.Dishes.Update(dish);
+        dbcontext.SaveChanges();
+        return RedirectToAction("DisplayDish", new {dishId = dish.DishId});
     }
 
     [HttpPost("/dishes/{deleteDishId}/delete")]

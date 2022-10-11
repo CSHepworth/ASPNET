@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Chef
+
+<h3 class="linkHeader"><a href="/">Chefs</a> | <a href="/dishes">Dishes</a> | Add a Chef | <a href="/adddish">Add a Dish</a></h3>
+<h2>Add Chef</h2>
+<form method="post" asp-action="CreateChef" asp-controller="Home">
+    <div>
+        <label asp-for="FirstName">First Name:</label>
+        <input type="text" asp-for="FirstName">
+    </div>
+    <div>
+        <label asp-for="LastName">Last Name:</label>
+        <input type="text" asp-for="LastName">
+    </div>
+    <div>
+        <label asp-for="DoB">Date of Birth:</label>
+        <input type="date" asp-for="DoB">
+    </div>
+    <input type="submit" value="Add Chef">
+</form>

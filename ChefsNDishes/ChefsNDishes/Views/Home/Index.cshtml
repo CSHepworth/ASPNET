@@ -1,0 +1,27 @@
+﻿<link rel="stylesheet" href="~/css/style.css">
+@model List<Chef>
+
+<h3 class="linkHeader">Chefs | <a href="/dishes">Dishes</a> | <a href="/addchef">Add a Chef</a> | <a href="/adddish">Add a Dish</a></h3>
+<h2>Chef Roster</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var chef in Model)
+        {
+            var today = DateTime.Today;
+            var age = today.Year - chef.DoB.Year;
+            var dishcount = chef.CreatedDishes.Count; 
+            <tr>
+                <td>@chef.FirstName @chef.LastName</td>
+                <td>@age</td>
+                <td>@dishcount</td>
+            </tr>
+        }
+    </tbody>
+</table>

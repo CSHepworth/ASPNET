@@ -3,7 +3,7 @@
 
 <h1 class="indexHeader">Edit @Model.Name</h1>
 <h3 class="linkHeader"><a href="/">Home</a> | <a href="/dishes/new">Add a Dish</a></h3>
-<form method="post" asp-action="Edit" asp-controller="Home" class="addDishMain">
+<form method="post" asp-action="Update" asp-controller="Home" asp-route-dishId="@Model.DishId" class="addDishMain">
     <div class="addDishLeft">
         <div class="addDishInput">
             <label asp-for="Chef">Chef's Name</label>
