@@ -1,21 +1,19 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ProductCategories.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+
 
 namespace ProductCategories.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private MyContext dbcontext;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(MyContext context)
     {
-        _logger = logger;
-    }
-
-    public IActionResult Index()
-    {
-        return View();
+        dbcontext = context;
     }
 
     public IActionResult Privacy()

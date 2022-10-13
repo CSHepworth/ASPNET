@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Category
+
+<div>
+    <h2>New Category</h2>
+    <form method="post" asp-controller="Home" asp-action="CreateCategory">
+        <div>
+            <label asp-for="CategoryName">Category Name:</label>
+            <input type="text" asp-for="CategoryName">
+        </div>
+        <input type="submit" value="Create Category">
+    </form>

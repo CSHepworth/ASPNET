@@ -1,0 +1,18 @@
+﻿<link rel="stylesheet" href="~/css/style.css">
+@model List<Product>
+
+<h2 class="linkHeader"><a href="/">Products</a> | <a href="categories">Categories</a></h2>
+<div class="productsMainDiv">
+    <div>
+        @{
+            Product emptyproduct = new Product();
+        }
+        <partial name="AddProductPartial" model="@emptyproduct" />
+    </div>
+    <div>
+        @foreach (var product in Model)
+        {
+            <a asp-controller="Product" asp-action="ViewProduct" asp-route-productId="@product.ProductId">@product.ProductName</a>
+        }
+    </div>
+</div>

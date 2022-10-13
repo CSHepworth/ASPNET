@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Product
+
+<div>
+    <h2>New Product</h2>
+    <form method="post" asp-controller="Product" asp-action="CreateProduct">
+        <div>
+            <label asp-for="ProductName">Product Name:</label>
+            <input type="text" asp-for="ProductName">
+        </div>
+        <div>
+            <label asp-for="ProductDescription">Description:</label>
+            <textarea asp-for="ProductDescription"></textarea>
+        </div>
+        <div>
+            <label asp-for="ProductPrice">Price:</label>
+            <input type="number" min="0.00" max="10000.00" step="0.01" asp-for="ProductPrice">
+        </div>
+        <input type="submit" value="Create">
+    </form>
+</div>

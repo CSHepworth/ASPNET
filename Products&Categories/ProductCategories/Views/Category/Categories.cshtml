@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model List<Category>
+
+<h2 class="linkHeader"><a href="/">Products</a> | Categories</h2>
+<div class="productsMainDiv">
+    <div>
+        @{
+            Category emptycategory = new Category();
+        }
+        <partial name="AddCategoryPartial" model="@emptycategory" />
+    </div>
+    <div>
+        @foreach (var category in Model)
+        {
+            <a href="/category/{@category.CategoryId}/view">@category.CategoryName</a>
+        }
+    </div>
+</div>
