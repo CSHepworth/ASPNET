@@ -1,0 +1,15 @@
+@model LoginUser
+
+<form method="post" asp-controller="User" asp-action="Login" class="indexLoginFormDiv">
+    <div class="indexLoginInputDiv">
+        <label for="LoginEmail">Email:</label>
+        <input type="email" asp-for="LoginEmail">
+    </div>
+    <div class="indexLoginInputDiv">
+        <label asp-for="LoginPassword">Password:</label>
+        <input type="password" asp-for="LoginPassword">
+    </div>
+    <div class="indexLoginSubmitDiv">
+        <input type="submit" value="Login">
+    </div>
+</form>

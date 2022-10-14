@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model Wedding
+
+@Context.Session.GetInt32("userId")
+<div class="dashboardHeader">
+    <h3>Welcome @ViewBag.User.FirstName!</h3>
+    <div class="dashboardHeaderLinks">
+        <p><a href="/dashboard">Home</a> | <a href="/planwedding">Plan a Wedding</a> | <a href="/logout">Logout</a></p>
+    </div>
+</div>
+
+<h1>@Model.Wedder1 & @Model.Wedder2's Wedding</h1>
+<h3>Date: @Model.WeddingDate.ToString("MM/dd/yyyy")</h3>
+<div>
+    <h4>Guest List</h4>
+    @foreach (var guest in Model.GuestList)
+    {
+        <p>@guest.User.FirstName @guest.User.LastName</p>
+    }
+</div>

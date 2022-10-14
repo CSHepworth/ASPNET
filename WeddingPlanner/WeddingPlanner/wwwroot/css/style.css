@@ -1,0 +1,68 @@
+.indexMainDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px auto;
+    width: 90%;
+}
+.indexMainDivLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+.indexRegisterFormDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+.indexRegisterInputDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.indexRegisterSubmitDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+.indexMainDivRight {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+.indexLoginFormDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+.indexLoginInputDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.indexLoginSubmitDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+.dashboardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+}
+.dashboardHeaderLinks {
+    font-size: 25px;
+}
+.dashboardMainDiv {
+    margin: 20px auto;
+    width: 90%;
+
+}
+.dashboardMainTable {
+    width: 100%;
+}
