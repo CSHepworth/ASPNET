@@ -1,0 +1,46 @@
+﻿@{Layout = null;}
+<link rel="stylesheet" href="~/css/style.css">
+@model Employee
+
+<div class="loginRegisterMainDiv">
+    <div class="loginRegisterMainDivLeft">
+        <h1>Register</h1>
+        <form method="post" asp-controller="Employee" asp-action="RegisterEmployee" class="registerForm" >
+            <div class="inputDiv">
+                <label asp-for="FirstName">First Name:</label>
+                <input type="text" asp-for="FirstName" class="input">
+            </div>
+            <div class="inputDiv">
+                <label asp-for="LastName">Last Name:</label>
+                <input type="text" asp-for="LastName" class="input">
+            </div>
+            <div class="inputDiv">
+                <label asp-for="Phone">Phone#:</label>
+                <input type="tel" asp-for="Phone" class="input">
+            </div>
+            <div class="inputDiv">
+                <label asp-for="DoB">Date of Birth:</label>
+                <input type="date" asp-for="DoB" class="input">
+            </div>
+            <div class="inputDiv">
+                <label asp-for="Email">Email</label>
+                <input type="email" asp-for="Email" class="input">
+            </div>
+            <div class="inputDiv">
+                <label asp-for="Password">Password:</label>
+                <input type="password" asp-for="Password" class="input">
+            </div>
+            <div class="inputDiv">
+                <label asp-for="Confirm">Confirm Password:</label>
+                <input type="password" asp-for="Confirm" class="input">
+            </div>
+            <div class="submitDiv">
+                <input type="submit" value="Register" class="submitButton">
+            </div>
+        </form>
+    </div>
+    <div class="loginRegisterMainDivLeft">
+        <h1>Login</h1>
+        <partial name="LoginEmployeePartial" />
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="~/css/style.css">
+@model List<Employee>
+
+<h1>Employees</h1>
+@foreach (Employee employee in Model)
+{
+    <h3>@employee.FirstName @employee.LastName</h3>
+}
