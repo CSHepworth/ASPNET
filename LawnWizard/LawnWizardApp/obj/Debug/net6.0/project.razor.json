@@ -16313,6 +16313,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\LawnWizard\\LawnWizardApp\\Views\\Employee\\ViewEmployee.cshtml",
+      "TargetPath": "Views\\Employee\\ViewEmployee.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\LawnWizard\\LawnWizardApp\\Views\\Employee\\Employees.cshtml",
+      "TargetPath": "Views\\Employee\\Employees.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\LawnWizard\\LawnWizardApp\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -16325,11 +16335,6 @@
     {
       "FilePath": "c:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\LawnWizard\\LawnWizardApp\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\coope\\GitHub\\Csharp\\ASPNET\\LawnWizard\\LawnWizardApp\\Views\\Employees\\Employees.cshtml",
-      "TargetPath": "Views\\Employees\\Employees.cshtml",
       "FileKind": "mvc"
     },
     {

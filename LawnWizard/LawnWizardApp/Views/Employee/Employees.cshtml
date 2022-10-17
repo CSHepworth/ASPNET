@@ -4,5 +4,13 @@
 <h1>Employees</h1>
 @foreach (Employee employee in Model)
 {
-    <h3>@employee.FirstName @employee.LastName</h3>
+    <div>
+        <h3>@employee.FirstName @employee.LastName</h3>
+        <form method="post" asp-controller="Employee" asp-action="ViewEmployee">
+            <button>
+                <span>View</span>
+            </button>
+        </form>
+    </div>
+
 }

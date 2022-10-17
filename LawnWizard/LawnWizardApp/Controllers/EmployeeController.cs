@@ -87,4 +87,17 @@ public class EmployeeController : Controller
         List<Employee> allEmployees = db.Employees.ToList();
         return View("Employees", allEmployees);
     }
+
+    [HttpPost("view/{employeeId}")]
+    public IActionResult ViewEmployee(Employee employee)
+    {
+        Employee? viewemployee = db.Employees.FirstOrDefault(e => e.EmployeeId == employee.EmployeeId);
+
+        if (viewemployee == null)
+        {
+            return RedirectToAction("Employees");
+        }
+
+        return View("ViewEmployee", viewemployee);
+    }
 }
