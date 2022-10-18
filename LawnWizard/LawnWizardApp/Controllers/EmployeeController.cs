@@ -4,6 +4,7 @@ using LawnWizardApp.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 
 namespace LawnWizardApp.Controllers;
 
@@ -16,28 +17,7 @@ public class EmployeeController : Controller
         db = context;
     }
 
-    [HttpPost("registeremployee")]
-    public IActionResult RegisterEmployee(Employee newemployee)
-    {
-        if(ModelState.IsValid)
-        {
-            if(db.Employees.Any(e => e.Email == newemployee.Email))
-            {
-                ModelState.AddModelError("Email", "Email is already taken.");
-            }
-
-            PasswordHasher<Employee> Hasher = new PasswordHasher<Employee>();
-            newemployee.Password = Hasher.HashPassword(newemployee, newemployee.Password);
-            newemployee.AdminStatus = 0;
-
-            db.Employees.Add(newemployee);
-            db.SaveChanges();
-
-            HttpContext.Session.SetInt32("employeeId", newemployee.EmployeeId);
-            return RedirectToAction("Dashboard", "Home");
-        }
-        return RedirectToAction("Index", "Home");
-    }
+    
 
     [HttpPost("loginemployee")]
     public IActionResult LoginEmployee(LoginEmployee employee)

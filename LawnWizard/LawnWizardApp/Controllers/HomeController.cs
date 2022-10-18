@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using LawnWizardApp.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 
 namespace LawnWizardApp.Controllers;
 
@@ -19,6 +21,28 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
+    }
+
+    [HttpPost("registeremployee")]
+    public IActionResult RegisterEmployee(Employee newemployee)
+    {
+        if(ModelState.IsValid)
+        {
+            if(db.Employees.Any(e => e.Email == newemployee.Email))
+            {
+                ModelState.AddModelError("Email", "Email is already taken.");
+            }
+
+            PasswordHasher<Employee> Hasher = new PasswordHasher<Employee>();
+            newemployee.Password = Hasher.HashPassword(newemployee, newemployee.Password);
+
+            db.Employees.Add(newemployee);
+            db.SaveChanges();
+
+            HttpContext.Session.SetInt32("employeeId", newemployee.EmployeeId);
+            return RedirectToAction("Dashboard");
+        }
+        return View("Index");
     }
 
     [HttpGet("dashboard")]

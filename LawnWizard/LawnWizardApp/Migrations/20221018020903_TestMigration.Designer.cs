@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LawnWizardApp.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20221015001638_TestMigration")]
+    [Migration("20221018020903_TestMigration")]
     partial class TestMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ namespace LawnWizardApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("AdminStatus")
+                    b.Property<int?>("AdminStatus")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")

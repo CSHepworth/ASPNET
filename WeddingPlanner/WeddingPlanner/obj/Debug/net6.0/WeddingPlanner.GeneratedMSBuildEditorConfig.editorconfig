@@ -8,53 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WeddingPlanner
 build_property.RootNamespace = WeddingPlanner
-build_property.ProjectDir = C:\Users\coope\GitHub\Csharp\ASPNET\WeddingPlanner\WeddingPlanner\
+build_property.ProjectDir = c:\Users\coope\GitHub\Csharp\ASPNET\WeddingPlanner\WeddingPlanner\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\coope\GitHub\Csharp\ASPNET\WeddingPlanner\WeddingPlanner
+build_property.MSBuildProjectDirectory = c:\Users\coope\GitHub\Csharp\ASPNET\WeddingPlanner\WeddingPlanner
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Home/Index.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Home/LoginUserPartial.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Home/LoginUserPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblVzZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Home/Privacy.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Shared/Error.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/User/Dashboard.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/User/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Wedding/PlanWedding.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Wedding/PlanWedding.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VkZGluZ1xQbGFuV2VkZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Wedding/ViewWedding.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Wedding/ViewWedding.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VkZGluZ1xWaWV3V2VkZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/_ViewImports.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/_ViewStart.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Shared/_Layout.cshtml]
+[c:/Users/coope/GitHub/Csharp/ASPNET/WeddingPlanner/WeddingPlanner/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l8pyi8tiun

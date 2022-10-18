@@ -5,17 +5,20 @@
 <div class="loginRegisterMainDiv">
     <div class="loginRegisterMainDivLeft">
         <h1>Register</h1>
-        <form method="post" asp-controller="Employee" asp-action="RegisterEmployee" class="registerForm" >
+        <form method="post" asp-controller="Home" asp-action="RegisterEmployee" class="registerForm" >
             <div class="inputDiv">
                 <label asp-for="FirstName">First Name:</label>
-                <input type="text" asp-for="FirstName" class="input">
+                <span asp-validation-for="FirstName" class="errorMsg"></span>
+                <input asp-for="FirstName" class="input">
             </div>
             <div class="inputDiv">
                 <label asp-for="LastName">Last Name:</label>
+                <span asp-validation-for="LastName"></span>
                 <input type="text" asp-for="LastName" class="input">
             </div>
             <div class="inputDiv">
                 <label asp-for="Phone">Phone#:</label>
+                <span asp-validation-for="Phone"></span>
                 <input type="tel" asp-for="Phone" class="input">
             </div>
             <div class="inputDiv">
@@ -29,6 +32,7 @@
             <div class="inputDiv">
                 <label asp-for="Password">Password:</label>
                 <input type="password" asp-for="Password" class="input">
+                <span asp-validation-for="Password"></span>
             </div>
             <div class="inputDiv">
                 <label asp-for="Confirm">Confirm Password:</label>

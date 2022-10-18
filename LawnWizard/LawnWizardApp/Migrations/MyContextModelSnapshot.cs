@@ -25,7 +25,7 @@ namespace LawnWizardApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("AdminStatus")
+                    b.Property<int?>("AdminStatus")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")

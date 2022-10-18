@@ -10,35 +10,37 @@ public class Employee
     [Key]
     public int EmployeeId { get; set; }
 
-    [Required]
+    [Display(Name = "First Name")]
+    [Required(ErrorMessage = "is required")]
     [StringLength(45)]
     [MinLength(2, ErrorMessage = "First Name must be at least 2 characters.")]
     public string FirstName { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "is required")]
     [StringLength(45)]
     [MinLength(2, ErrorMessage = "Last Name must be at least 2 characters.")]
     public string LastName { get; set; }
 
     [DataType(DataType.PhoneNumber)]
-    [Required]
+    [Required(ErrorMessage = "is required")]
     [StringLength(10)]
+    [MinLength(10, ErrorMessage = "Please Enter a valid phone number.")]
     public string Phone { get; set; }
 
     [DataType(DataType.Date)]
     [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
-    [Required]
+    [Required(ErrorMessage = "is required")]
     public DateTime DoB { get; set; }
 
-    public int? AdminStatus { get; set; }
+    public int? AdminStatus { get; set; } = 0;
     
     [EmailAddress]
-    [Required]
+    [Required(ErrorMessage = "is required")]
     [StringLength(129)]
     public string Email { get; set; }
 
     [DataType(DataType.Password)]
-    [Required]
+    [Required(ErrorMessage = "is required")]
     [StringLength(100)]
     public string Password { get; set; }
 

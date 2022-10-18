@@ -26,7 +26,7 @@ namespace LawnWizardApp.Migrations
                     Phone = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     DoB = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    AdminStatus = table.Column<int>(type: "int", nullable: false),
+                    AdminStatus = table.Column<int>(type: "int", nullable: true),
                     Email = table.Column<string>(type: "varchar(129)", maxLength: 129, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Password = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
