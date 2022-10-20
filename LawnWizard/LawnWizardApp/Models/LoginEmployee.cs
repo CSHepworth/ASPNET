@@ -7,11 +7,12 @@ namespace LawnWizardApp.Models;
 public class LoginEmployee
 {
     [EmailAddress]
-    [Required]
     [Display(Name = "Email")]
+    [Required(ErrorMessage = "is required")]
     public string LoginEmail { get; set; }
 
     [DataType(DataType.Password)]
     [Display(Name = "Password")]
+    [Required(ErrorMessage = "is required")]
     public string LoginPassword { get; set; }
 }
